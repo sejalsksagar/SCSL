@@ -16,6 +16,9 @@ barplot(sales, xlab="Year", ylab="Sales", main="", col="white");
 soft<-scan();
 barplot(table(soft), xlab="Soft drink", ylab="Frequency of preferences", main="", col="blue");
 
+barplot(table(soft)/length(soft), xlab="Soft drink", ylab="Proportion of preferences",
+main="", col="gray70");
+
 #3. subdivided bar diagram
 year.stud<-matrix(c(2810, 890, 540, 3542, 1363, 471, 4301, 1663, 652, 5362, 2071, 895, 6593, 2752, 1113), byrow=T,ncol=3);
 rownames(year.stud)<-c("1996", "1997", "1998", "1999", "2000");
